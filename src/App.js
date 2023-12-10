@@ -3,12 +3,14 @@ import { ethers } from 'ethers';
 import kittyConnect from './abi/KittyConnect'
 import { ContractAddrProvider } from './context/contractAddr';
 import { useState } from 'react';
-import Display from './components/Display';
 import KittyInfo from './components/KittyInfo';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar/Navbar';
 import User from './components/user/User';
+import Partner from './components/partner/Partner';
+import ConnectOwner from './components/ConnectOwner/ConnectOwner';
+import About from './components/About';
 
 function App() {
   const [kittyConnectAddr, setKittyConnectAddr] = useState(null)
@@ -82,8 +84,24 @@ function App() {
   return (
     <ContractAddrProvider value={{ kittyConnectAddr, userAddress, chainId }}>
       <Navbar connect={connectWallet} />
-      {/* <Home /> */}
-      <User />
+
+      {/* {
+        userType == -1 ? <Home /> : <></>
+      }
+      {
+        userType == 0 ? <User /> : <></>
+      }
+      
+      {
+        userType == 1 ? <Partner /> : <></>
+      }
+
+      {
+        userType == 2 ? <ConnectOwner /> : <></>
+      } */}
+
+      <About />
+
       <Footer />
     </ContractAddrProvider>
   );

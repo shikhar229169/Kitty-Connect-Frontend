@@ -62,7 +62,7 @@ function User() {
                         </div>
                     </div>
                     <div className="user-button">
-                        <button onClick={bridgeNFT}>Submit</button>
+                        <button onClick={bridgeNFT}>Bridge NFT</button>
                     </div>
 
                 </div>
@@ -87,7 +87,7 @@ function User() {
                         </div>
                     </div>
                     <div className="user-button">
-                        <button onClick={transferCat}>Submit</button>
+                        <button onClick={transferCat}>Approve Transfer</button>
                     </div>
 
                 </div>

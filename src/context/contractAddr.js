@@ -3,8 +3,7 @@ import { createContext, useContext } from "react";
 export const ContractAddrContext = createContext({
     kittyConnectAddr: "",
     userAddress: "",
-    chainId: "",
-    userType: 0
+    chainId: ""
 })
 
 export const ContractAddrProvider = ContractAddrContext.Provider
