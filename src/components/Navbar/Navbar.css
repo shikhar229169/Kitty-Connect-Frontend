@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Quicksand&family=Ubuntu&display=swap');
+
+header {
+    top: 0px;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+#navList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navOpt a {
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+    font-size: 20px;
+    font-family: 'quicksand';
+    font-weight: 900;
+    padding: 10px;
+    font-weight: 500;
+    display: block;
+    transition: all 0.28s ease-in 0s;
+}
+
+.navOpt a:hover {
+    border-radius: 20px;
+    border: 0px;
+    background-color: #8b008b;
+    color: white;
+}
+
+
+#connect button {
+    margin-left: 600px;
+    border-radius: 9px;
+    border: solid #8b008b 2px;
+    color: #8b008b;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'quicksand';
+    transition: all 0.28s ease-in 0s;
+    cursor: pointer;
+}
+
+#connect button:hover {
+    background-color: #8b008b;
+    color: white;
+}

@@ -1,0 +1,20 @@
+#getcats {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid #8b008b 2px;
+    background-color: white;
+    color: #8b008b;
+    font-family: 'quicksand';
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.28s ease-in 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#getcats:hover {
+    background-color: #8b008b;
+    color: white;
+}

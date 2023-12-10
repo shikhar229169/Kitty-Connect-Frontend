@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Quicksand&family=Ubuntu&display=swap');
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.User {
+    margin: 10px;
+    border: 3px;
+    border: solid #8b008b 1px;
+    border-radius: 12px;
+    padding: 20px;
+    /* width: 50%; */
+}
+
+.heading h1 {
+    font-family: 'ubuntu';
+    text-align: center;
+}
+
+.heading p {
+    font-family: 'quicksand';
+    font-size: 20px;
+}
+
+.user-forms {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-form {
+    margin: 3px;
+    width: 50%;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.user-form h3 {
+    font-family: 'quicksand';
+    text-align: center;
+    margin: 0px;
+    color: white;
+    padding: 10px;
+}
+
+.user-form label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+.userInput input {
+    outline: none;
+    height: 40px;
+    width: 70%;
+    font-size: 20px;
+    font-family: 'quicksand';
+}
+
+.User button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid #8b008b 2px;
+    background-color: white;
+    color: #8b008b;
+    font-family: 'quicksand';
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.28s ease-in 0s;
+}
+
+.user-form-heading {
+    margin: 0px;
+    padding: 0px;
+    background-color: #8b008b;
+}
+
+.user-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.User button:hover {
+    background-color: #8b008b;
+    color: white;
+}
+
+.userInputs {
+    padding-left: 9px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.userInput {
+    width: 100%;
+    margin: 12px;
+}
+
+.kitties {
+    margin: 10px;
+    border: 3px;
+    border: solid #8b008b 1px;
+    border-radius: 12px;
+    padding: 20px;
+}

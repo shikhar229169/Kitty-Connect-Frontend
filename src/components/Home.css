@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Quicksand&family=Ubuntu&display=swap');
+
+.home {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: row;
+}
+
+.home .left {
+    padding: 150px;
+    width: 65%;
+}
+
+#kitty-connect {
+    color: #8b008b;
+}
+
+.home-info img {
+    width: 40px; 
+}
+
+.home-info {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.home h1 {
+    font-family: 'quicksand';
+    font-size: 45px;
+}
+
+.home p {
+    font-family: 'ubuntu';
+    line-height: 1.1;
+    font-size: 22px;
+}
+
+.right img {
+    width: 400px;
+    border-radius: 30px;
+}
