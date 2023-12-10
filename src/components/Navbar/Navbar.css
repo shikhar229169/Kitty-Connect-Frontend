@@ -41,7 +41,7 @@ nav {
 
 
 #connect button {
-    margin-left: 600px;
+    margin-left: 400px;
     border-radius: 9px;
     border: solid #8b008b 2px;
     color: #8b008b;
@@ -56,4 +56,12 @@ nav {
 #connect button:hover {
     background-color: #8b008b;
     color: white;
+}
+
+#fav {
+    width: 210px;
+}
+
+#logo {
+    width: 70px;
 }
