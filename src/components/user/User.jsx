@@ -12,6 +12,8 @@ function User() {
     const [newOwnerAddr, setNewOwnerAddr] = useState()
     const { kittyConnectAddr } = useContractAddr()
 
+    const [bridgeMessage, setBridgeMessage] = useState('')
+
     async function bridgeNFT() {
         const provider = new ethers.BrowserProvider(window.ethereum)
         const signer = await provider.getSigner()
@@ -20,7 +22,10 @@ function User() {
         
         const bridgeAddr = KittyConnect.bridge[chainSelector]
         const txn = await contract.bridgeNftToAnotherChain(chainSelector, bridgeAddr, tokenId1)
-        await txn.wait(1)
+
+        console.log(`View bridge txn: https://ccip.chain.link/tx/${txn.hash}`)
+
+        setBridgeMessage(`https://ccip.chain.link/tx/${txn.hash}`)
     }
 
     async function transferCat() {
@@ -63,6 +68,11 @@ function User() {
                     </div>
                     <div className="user-button">
                         <button onClick={bridgeNFT}>Bridge NFT</button>
+                    </div>
+                    <div className="bridgeM">
+                        <span className="bridgeMessage">
+                            <a href={bridgeMessage} target="_blank">{bridgeMessage != '' ? 'View txn here' : ''}</a>
+                        </span>
                     </div>
 
                 </div>

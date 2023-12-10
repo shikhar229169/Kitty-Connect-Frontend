@@ -3,7 +3,6 @@ import { ethers } from 'ethers';
 import kittyConnect from './abi/KittyConnect'
 import { ContractAddrProvider } from './context/contractAddr';
 import { useState } from 'react';
-import KittyInfo from './components/KittyInfo';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar/Navbar';
@@ -11,6 +10,12 @@ import User from './components/user/User';
 import Partner from './components/partner/Partner';
 import ConnectOwner from './components/ConnectOwner/ConnectOwner';
 import About from './components/About';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   const [kittyConnectAddr, setKittyConnectAddr] = useState(null)
@@ -82,28 +87,19 @@ function App() {
 
 
   return (
+    <Router>
     <ContractAddrProvider value={{ kittyConnectAddr, userAddress, chainId }}>
       <Navbar connect={connectWallet} />
 
-      {/* {
-        userType == -1 ? <Home /> : <></>
-      }
-      {
-        userType == 0 ? <User /> : <></>
-      }
-      
-      {
-        userType == 1 ? <Partner /> : <></>
-      }
-
-      {
-        userType == 2 ? <ConnectOwner /> : <></>
-      } */}
-
-      <About />
+        <Routes>
+          <Route exact path='/' element={userType == -1 ? <Home/> : (userType == 0 ? <User /> : (userType == 1 ? <Partner /> : <ConnectOwner />))} />
+          <Route exact path='/about' element={<About />} />
+        </Routes>
 
       <Footer />
     </ContractAddrProvider>
+
+    </Router>
   );
 }
 

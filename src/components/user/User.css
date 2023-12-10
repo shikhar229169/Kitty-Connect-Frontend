@@ -113,3 +113,15 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 12px;
     padding: 20px;
 }
+
+.bridgeMessage {
+    font-size: 18px;
+    font-family: 'quicksand';
+}
+
+.bridgeM {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}

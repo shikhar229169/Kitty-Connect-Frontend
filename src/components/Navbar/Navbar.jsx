@@ -10,10 +10,10 @@ function Navbar(props) {
         <header>
             <nav>
                 <ul id="navList">
-                    <li className="navOpt"><a href="">Home</a></li>
-                    <li className="navOpt"><a href="#services-section">About Us</a></li>
-                    <li className="navOpt"><a href="#footer">Our Shop</a></li>
-                    <li className="navOpt"><a href="#contact-section">Contact Us</a></li>
+                    <li className="navOpt"><Link to="/">Home</Link></li>
+                    <li className="navOpt"><Link to="/about">About Us</Link></li>
+                    <li className="navOpt"><Link to="/">Our Shop</Link></li>
+                    <li className="navOpt"><Link to="/">Contact Us</Link></li>
                     <li id="connect" className="navOpt"><button onClick={props.connect}>{(kittyConnectAddr == null) ? "Connect Wallet":"Connected"}</button></li>
                 </ul>
             </nav>
